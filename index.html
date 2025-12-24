@@ -736,7 +736,16 @@
         function shareOnWhatsApp() {
             const name = userNameInput.value.trim() || 'Your Name';
             const greeting = `🎉 *Happy New Year 2026!* 🎉\n\nWishing ${name} a spectacular New Year filled with joy, success, and endless possibilities! May 2026 bring you love, laughter, and all the happiness you deserve!\n\nCreate your own personalized greeting: ${window.location.href}`;
-            
+            <script>
+  atOptions = {
+    'key' : '626f9280917a4dcf6856ada064faf7f9',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script>
             const whatsappURL = `https://wa.me/?text=${encodeURIComponent(greeting)}`;
             window.open(whatsappURL, '_blank');
             showNotification('Opening WhatsApp to share your greeting!');
