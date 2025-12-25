@@ -1,128 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><meta name="viewport" content="width=1200">
-
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>🎆 Happy New Year 2026 | Send Wishes From Your Name</title>
-    
-    <!-- WhatsApp Sharing Meta Tags -->
-    <meta property="og:title" content="🎉 Happy New Year 2026 Wish From [Your Name]">
-    <meta property="og:description" content="Send personalized New Year wishes from your name to friends & family">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://newyear2026wishes.com">
-    <meta property="og:type" content="website">
-    
-    <!-- Fonts & Icons -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎆 New Year 2026 Wishes</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
-    
-    <!-- Confetti JS -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
-
-        :root {
-            --gold: #FFD700;
-            --gold-glow: #FFE55C;
-            --silver: #C0C0C0;
-            --firework-red: #FF0000;
-            --firework-blue: #0066FF;
-            --firework-green: #00FF00;
-            --dark-blue: #0A0F2B;
-            --sparkle: #FFEAA7;
-            --hot-pink: #FF1493;
-            --violet: #8A2BE2;
-            --cyan: #00FFFF;
-            --orange: #FF8C00;
-            --spring-green: #00FF7F;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #0A0F2B 0%, #1A1F3C 50%, #2A2F4C 100%);
+            background: linear-gradient(135deg, #0a0f2b, #1a1f3c, #2a2f4c);
             color: white;
             min-height: 100vh;
-            overflow-x: hidden;
-            position: relative;
-        }
-
-        /* Animated Background */
-        .fireworks-bg {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .firework {
-            position: absolute;
-            width: 4px;
-            height: 4px;
-            border-radius: 50%;
-            animation: firework-animation 2s infinite;
-        }
-
-        @keyframes firework-animation {
-            0% { transform: translateY(100vh); opacity: 1; }
-            100% { transform: translateY(-100px); opacity: 0; }
-        }
-
-        /* Main Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
             padding: 20px;
-            position: relative;
-            z-index: 2;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(15px);
+            border-radius: 25px;
+            padding: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
         }
 
         /* Header */
         .header {
             text-align: center;
-            padding: 30px 20px;
-            background: linear-gradient(45deg, rgba(255,215,0,0.2), rgba(192,192,192,0.2));
-            border-radius: 25px;
-            margin-bottom: 30px;
-            backdrop-filter: blur(10px);
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 50px rgba(255,215,0,0.3);
-            animation: glow 2s infinite alternate;
+            margin-bottom: 40px;
+            padding: 20px;
+            background: linear-gradient(45deg, rgba(255, 107, 107, 0.2), rgba(255, 193, 7, 0.2));
+            border-radius: 20px;
+            border: 2px solid rgba(255, 193, 7, 0.3);
         }
 
-        @keyframes glow {
-            from { box-shadow: 0 0 30px rgba(255,215,0,0.3); }
-            to { box-shadow: 0 0 60px rgba(255,215,0,0.6); }
-        }
-
-        .new-year-text {
+        .new-year {
             font-size: 4rem;
             font-weight: 800;
-            background: linear-gradient(45deg, #FFD700, #FF8C00, #FF1493, #00BFFF);
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #6bcf7f, #4d96ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(255,255,255,0.3);
-            font-family: 'Dancing Script', cursive;
             margin-bottom: 10px;
         }
 
-        .year-2026 {
+        .year {
             font-size: 6rem;
-            font-weight: 900;
-            color: var(--gold);
-            text-shadow: 0 0 20px var(--gold),
-                         0 0 40px var(--gold),
-                         0 0 60px var(--gold);
-            animation: pulse 1s infinite;
-            margin: 10px 0;
+            color: #ffd93d;
+            text-shadow: 0 0 20px #ffd93d;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
         }
 
         @keyframes pulse {
@@ -130,459 +64,162 @@
             50% { transform: scale(1.05); }
         }
 
-        /* Concept Explanation */
-        .concept-box {
-            background: linear-gradient(135deg, rgba(255,20,147,0.2), rgba(255,215,0,0.2));
-            padding: 25px;
-            border-radius: 20px;
-            margin: 20px auto;
-            text-align: center;
-            border: 2px solid var(--hot-pink);
-            max-width: 800px;
-        }
-
-        .concept-box h3 {
-            color: var(--hot-pink);
-            font-size: 1.8rem;
-            margin-bottom: 15px;
-            font-family: 'Playfair Display', serif;
-        }
-
-        .concept-box p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-        }
-
-        .highlight {
-            color: var(--gold);
-            font-weight: bold;
-            font-size: 1.3rem;
-            display: block;
-            margin: 10px 0;
-        }
-
         /* Input Section */
         .input-section {
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             padding: 40px;
-            border-radius: 25px;
+            border-radius: 20px;
+            margin: 30px 0;
             text-align: center;
-            margin-bottom: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255,255,255,0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .from-label {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-            color: var(--sparkle);
-            display: block;
-        }
-
-        .input-label {
-            font-size: 2.2rem;
-            margin-bottom: 20px;
-            color: var(--hot-pink);
-            display: block;
-            font-family: 'Playfair Display', serif;
+            border: 2px solid rgba(77, 150, 255, 0.3);
         }
 
         .name-input {
-            width: 80%;
+            width: 100%;
             max-width: 500px;
-            padding: 25px;
-            font-size: 1.8rem;
-            border: none;
+            padding: 20px 25px;
+            font-size: 1.4rem;
+            border: 3px solid transparent;
             border-radius: 50px;
-            background: rgba(255,255,255,0.95);
+            background: rgba(255, 255, 255, 0.95);
             text-align: center;
-            margin: 20px auto;
+            margin: 20px 0;
             outline: none;
-            transition: all 0.3s;
-            border: 4px solid transparent;
-            font-weight: bold;
             color: #333;
+            font-weight: 600;
         }
 
         .name-input:focus {
-            border-color: var(--hot-pink);
-            box-shadow: 0 0 40px var(--hot-pink);
-            transform: scale(1.05);
+            border-color: #ff6b6b;
+            box-shadow: 0 0 30px #ff6b6b;
         }
 
-        /* Buttons */
+        /* Button */
         .btn {
-            padding: 20px 50px;
-            font-size: 1.4rem;
+            padding: 18px 45px;
+            font-size: 1.3rem;
+            font-weight: 600;
             border: none;
             border-radius: 50px;
             cursor: pointer;
-            font-weight: 700;
-            transition: all 0.3s;
-            display: inline-flex;
+            margin: 15px;
+            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
+            color: white;
+            transition: transform 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* AD SPACES */
+        .ad-space {
+            background: rgba(255, 255, 255, 0.05);
+            border: 3px solid #ff0000;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            color: white;
+            min-height: 150px;
+            display: flex;
             align-items: center;
             justify-content: center;
-            gap: 15px;
-            margin: 15px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
+            flex-direction: column;
+            position: relative;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
         }
 
-        .btn-generate {
-            background: linear-gradient(45deg, #FF1493, #FF8C00);
-            color: white;
-            box-shadow: 0 10px 30px rgba(255,20,147,0.4);
+        .ad-space::before {
+            content: "⚠️ PUT AD CODE BELOW";
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 14px;
+            color: #ff0000;
+            font-weight: bold;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 5px 15px;
+            border-radius: 10px;
         }
 
-        .btn-generate:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(255,20,147,0.6);
+        .ad-label {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #ffd93d;
+            font-weight: bold;
         }
 
-        .btn-whatsapp {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
-        }
-
-        .btn-whatsapp:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(37,211,102,0.6);
-        }
-
-        .btn-copy {
-            background: linear-gradient(45deg, #8A2BE2, #FF1493);
-            color: white;
-            box-shadow: 0 10px 30px rgba(138,43,226,0.4);
-        }
-
-        .btn-copy:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 15px 40px rgba(138,43,226,0.6);
+        .ad-size {
+            font-size: 1rem;
+            color: #ff6b6b;
+            margin-top: 10px;
         }
 
         /* Greeting Card */
         .greeting-card {
             display: none;
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background: linear-gradient(135deg, rgba(255, 107, 107, 0.15), rgba(255, 193, 7, 0.15));
             padding: 50px;
-            border-radius: 30px;
-            text-align: center;
-            margin: 40px auto;
-            position: relative;
-            overflow: hidden;
-            border: 5px solid var(--gold);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
-            animation: cardReveal 0.8s ease-out;
-        }
-
-        @keyframes cardReveal {
-            from { opacity: 0; transform: scale(0.8); }
-            to { opacity: 1; transform: scale(1); }
-        }
-
-        .greeting-text {
-            font-size: 2.2rem;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            font-weight: 600;
-            font-family: 'Playfair Display', serif;
-        }
-
-        /* FIXED: BEAUTIFUL NAME DISPLAY */
-        .sender-name-container {
+            border-radius: 25px;
             margin: 40px 0;
-            padding: 40px 30px;
-            background: linear-gradient(135deg, 
-                rgba(255, 20, 147, 0.15), 
-                rgba(138, 43, 226, 0.15),
-                rgba(0, 255, 255, 0.15),
-                rgba(255, 140, 0, 0.15));
-            border-radius: 20px;
-            border: 4px solid;
-            border-image: linear-gradient(45deg, #FF1493, #8A2BE2, #00FFFF, #FF8C00) 1;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 
-                0 0 20px rgba(255, 20, 147, 0.3),
-                0 0 40px rgba(138, 43, 226, 0.2),
-                inset 0 0 30px rgba(255, 255, 255, 0.1);
+            text-align: center;
+            border: 3px solid rgba(255, 193, 7, 0.4);
         }
 
-        .sender-label {
-            font-size: 1.8rem;
-            color: var(--gold);
-            margin-bottom: 25px;
-            font-weight: 600;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
-        }
-
-        .sender-name {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 4.5rem;
-            font-weight: 900;
-            letter-spacing: 2px;
-            padding: 25px 50px;
-            border-radius: 15px;
-            position: relative;
-            z-index: 2;
-            background: linear-gradient(45deg,
-                #FF1493 0%,
-                #FF8C00 25%,
-                #FFD700 50%,
-                #00FF7F 75%,
-                #00FFFF 100%);
+        .user-name {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #ff6b6b, #ffd93d, #4d96ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 
-                0 0 15px rgba(255, 20, 147, 0.7),
-                0 0 30px rgba(255, 20, 147, 0.5),
-                0 0 45px rgba(255, 20, 147, 0.3);
-            animation: rainbowGlow 2s infinite alternate;
-            display: inline-block;
-            margin: 15px 0;
-            position: relative;
-        }
-
-        /* Add a shiny overlay effect */
-        .sender-name::after {
-            content: '';
-            position: absolute;
-            top: -10px;
-            left: -10px;
-            right: -10px;
-            bottom: -10px;
-            background: linear-gradient(45deg,
-                transparent 0%,
-                rgba(255, 255, 255, 0.2) 50%,
-                transparent 100%);
+            margin: 40px 0;
+            padding: 20px 40px;
             border-radius: 20px;
-            z-index: -1;
-            animation: shine 3s infinite linear;
+            display: inline-block;
+            text-shadow: 0 0 20px rgba(255, 107, 107, 0.3);
+            border: 3px solid rgba(255, 193, 7, 0.5);
         }
 
-        @keyframes rainbowGlow {
-            0% {
-                filter: hue-rotate(0deg);
-                text-shadow: 
-                    0 0 15px rgba(255, 20, 147, 0.7),
-                    0 0 30px rgba(255, 20, 147, 0.5),
-                    0 0 45px rgba(255, 20, 147, 0.3);
-                transform: scale(1);
-            }
-            100% {
-                filter: hue-rotate(360deg);
-                text-shadow: 
-                    0 0 20px rgba(0, 255, 255, 0.7),
-                    0 0 40px rgba(0, 255, 255, 0.5),
-                    0 0 60px rgba(0, 255, 255, 0.3);
-                transform: scale(1.05);
-            }
-        }
-
-        @keyframes shine {
-            0% {
-                transform: translateX(-100%) translateY(-100%) rotate(45deg);
-            }
-            100% {
-                transform: translateX(100%) translateY(100%) rotate(45deg);
-            }
-        }
-
-        .signature {
-            font-size: 2rem;
-            color: var(--gold);
-            font-family: 'Dancing Script', cursive;
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 2px solid rgba(255,255,255,0.3);
-        }
-
-        /* Generated Link Section */
+        /* Link Section */
         .link-section {
             display: none;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255, 255, 255, 0.1);
             padding: 40px;
-            border-radius: 25px;
-            margin-top: 40px;
-            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin: 40px 0;
             text-align: center;
         }
 
         .generated-link {
-            background: rgba(0,0,0,0.3);
+            background: rgba(0, 0, 0, 0.3);
             padding: 25px;
             border-radius: 15px;
-            margin: 25px 0;
+            margin: 30px 0;
             word-break: break-all;
-            font-family: monospace;
-            border: 2px dashed var(--gold);
-            color: var(--sparkle);
+            font-family: 'Courier New', monospace;
+            border: 2px solid #ffd93d;
+            color: #ffd93d;
             font-size: 1.2rem;
-        }
-
-        /* Celebration Elements */
-        .celebration-emoji {
-            font-size: 3rem;
-            margin: 15px;
-            animation: float 3s infinite ease-in-out;
-        }
-
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-20px); }
-        }
-
-        .sparkle {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: var(--sparkle);
-            border-radius: 50%;
-            animation: sparkle 1.5s infinite;
-        }
-
-        @keyframes sparkle {
-            0%, 100% { opacity: 0; transform: scale(0); }
-            50% { opacity: 1; transform: scale(1); }
-        }
-
-        /* NEW: Name Preview */
-        .name-preview {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(255,255,255,0.05);
-            border-radius: 15px;
-            display: none;
-            border: 2px solid var(--hot-pink);
-        }
-
-        .preview-text {
-            font-size: 1.2rem;
-            color: var(--sparkle);
-            margin-bottom: 15px;
-        }
-
-        .preview-name {
-            font-size: 2.5rem;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif;
-            background: linear-gradient(45deg, #FF1493, #FF8C00);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        /* Instructions */
-        .instructions {
-            background: rgba(255,255,255,0.05);
-            padding: 30px;
-            border-radius: 25px;
-            margin-top: 40px;
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        .steps {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-top: 30px;
-            gap: 20px;
-        }
-
-        .step {
-            flex: 1;
-            min-width: 250px;
-            text-align: center;
-            padding: 30px 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 20px;
-            border: 2px solid rgba(255,215,0,0.3);
-            transition: transform 0.3s;
-        }
-
-        .step:hover {
-            transform: translateY(-10px);
-            border-color: var(--hot-pink);
-        }
-
-        .step-number {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background: linear-gradient(45deg, var(--hot-pink), var(--gold));
-            color: var(--dark-blue);
-            border-radius: 50%;
-            line-height: 50px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            font-size: 1.5rem;
         }
 
         /* Footer */
         .footer {
             text-align: center;
-            padding: 40px;
-            margin-top: 60px;
-            color: rgba(255,255,255,0.7);
-            font-size: 1rem;
-            border-top: 2px solid rgba(255,255,255,0.1);
-        }
-
-        .share-text {
-            font-size: 1.5rem;
-            color: var(--gold);
-            margin-bottom: 20px;
-            font-weight: bold;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .new-year-text { font-size: 3rem; }
-            .year-2026 { font-size: 4.5rem; }
-            .greeting-text { font-size: 1.8rem; }
-            .sender-name { 
-                font-size: 3rem; 
-                padding: 15px 30px;
-            }
-            .sender-name-container {
-                padding: 25px 15px;
-            }
-            .name-input { width: 95%; padding: 20px; font-size: 1.5rem; }
-            .btn { padding: 15px 30px; font-size: 1.2rem; }
-            .concept-box h3 { font-size: 1.5rem; }
-            .input-label { font-size: 1.8rem; }
-            .preview-name { font-size: 2rem; }
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.7);
         }
     </style>
 </head>
 <body>
 
-    <!-- Animated Fireworks Background -->
-    <div class="fireworks-bg" id="fireworks"></div>
-
-    <!-- Main Container -->
     <div class="container">
         
-        <!-- Header -->
-        <div class="header">
-            <h1 class="new-year-text">Happy New Year</h1>
-            <div class="year-2026">2026</div>
-            <p style="font-size: 1.4rem; opacity: 0.9; margin-top: 20px;">
-                ✨ Send Personalized Wishes From Your Name ✨
-            </p>
-        </div>
-        <script>
+        <!-- ============================================ -->
+        <!-- <script>
   atOptions = {
     'key' : '626f9280917a4dcf6856ada064faf7f9',
     'format' : 'iframe',
@@ -591,450 +228,224 @@
     'params' : {}
   };
 </script>
-<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script>
+<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script>) -->
+        <!-- ============================================ -->
+        <div class="ad-space" id="adSpace1">
+            <div class="ad-label">AD SPOT #1 - TOP POSITION</div>
+            <div class="ad-size">Size: 728x90 or 300x250</div>
+            
+            <!-- ✅✅✅ PASTE YOUR AD CODE HERE ✅✅✅ -->
+            <!-- 👇👇👇 Replace this div with your ad code 👇👇👇 -->
+            <div id="adCode1" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                <!-- Example: Adsterra Code -->
+                <!-- 
+                <script type="text/javascript">
+                    atOptions = {
+                        'key' : 'YOUR_AD_CODE',
+                        'format' : 'iframe',
+                        'height' : 250,
+                        'width' : 300,
+                        'params' : {}
+                    };
+                </script>
+                <script type="text/javascript" src="//www.highperformancedformats.com/YOUR_AD_CODE/invoke.js"></script>
+                -->
+                ⬆️⬆️⬆️ <script>
+  atOptions = {
+    'key' : '626f9280917a4dcf6856ada064faf7f9',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script> ⬆️⬆️⬆️
+            </div>
+            <!-- ✅✅✅ END OF AD CODE AREA ✅✅✅ -->
+            
+        </div>
 
-        <!-- Concept Explanation -->
-        <div class="concept-box">
-            <h3>🎯 How This Works:</h3>
-            <p>You enter <span class="highlight">YOUR NAME</span> below</p>
-            <p>We create a <span class="highlight">personalized greeting card</span> that says:</p>
-            <p style="font-size: 1.4rem; color: var(--gold); font-style: italic;">
-                "Happy New Year from [YOUR NAME]"
-            </p>
-            <p>Share the generated link with friends & family</p>
-            <p style="margin-top: 15px; color: var(--hot-pink);">
-                <i class="fas fa-heart"></i> They'll see the wish is personally from YOU!
+        <!-- Header -->
+        <div class="header">
+            <h1 class="new-year">Happy New Year</h1>
+            <div class="year">2026</div>
+            <p style="font-size: 1.3rem; color: #ffd93d;">
+                Create personalized wishes from your name!
             </p>
         </div>
 
         <!-- Input Section -->
         <div class="input-section">
-            <span class="from-label">WISHES FROM:</span>
-            <label class="input-label">
+            <div style="font-size: 1.8rem; margin-bottom: 25px; color: #ffd93d;">
                 <i class="fas fa-user-edit"></i> Enter Your Name
-            </label>
-            <p style="margin-bottom: 20px; font-size: 1.2rem; opacity: 0.9;">
-                This name will appear as the sender of the New Year wishes
-            </p>
-            
-            <input type="text" 
-                   class="name-input" 
-                   id="userName" 
-                   placeholder="Enter your name (e.g., John, Sarah, Michael)..."
-                   maxlength="30">
-            
-            <!-- Name Preview -->
-            <div class="name-preview" id="namePreview">
-                <div class="preview-text">Preview how your name will appear:</div>
-                <div class="preview-name" id="previewName">Your Name</div>
             </div>
+            <input type="text" class="name-input" id="userName" placeholder="Type your name here...">
             
-            <button class="btn btn-generate" id="generateBtn">
-                <i class="fas fa-magic"></i> CREATE MY WISH CARD
+            <button class="btn" id="generateBtn">
+                <i class="fas fa-magic"></i> Create My Wish
             </button>
+        </div>
+
+        <!-- ============================================ -->
+        <!-- AD SPACE 2 - MIDDLE (Paste your ad code below) -->
+        <!-- ============================================ -->
+        <div class="ad-space" id="adSpace2">
+            <div class="ad-label">AD SPOT #2 - MIDDLE POSITION</div>
+            <div class="ad-size">Size: 300x600 or 336x280</div>
+            
+            <!-- ✅✅✅ PASTE YOUR AD CODE HERE ✅✅✅ -->
+            <!-- 👇👇👇 Replace this div with your ad code 👇👇👇 -->
+            <div id="adCode2" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                <!-- Example: Google AdSense Code -->
+                <!-- 
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-YOUR_ID"
+                     crossorigin="anonymous"></script>
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-YOUR_ID"
+                     data-ad-slot="YOUR_SLOT"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script>
+                     (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+                -->
+                ⬆️⬆️⬆️ PASTE YOUR AD CODE ABOVE ⬆️⬆️⬆️
+            </div>
+            <!-- ✅✅✅ END OF AD CODE AREA ✅✅✅ -->
+            
         </div>
 
         <!-- Greeting Card -->
         <div class="greeting-card" id="greetingCard">
-            <div class="celebration-emoji">🎉🎊🥳</div>
+            <div style="font-size: 3rem; margin: 30px 0;">🎉🎊🥳</div>
             
-            <div class="greeting-text">
+            <div style="font-size: 2rem; line-height: 1.6; margin: 30px 0;">
                 <p>Wishing You A Wonderful New Year 2026!</p>
-                <p>May this year bring you:</p>
-                <p style="margin: 25px 0;">
-                    ✨ Joy & Happiness<br>
-                    💫 Success & Prosperity<br>
-                    🌟 Good Health & Peace<br>
-                    🎇 Love & Beautiful Memories
+                <p style="margin: 25px 0; color: #ffd93d;">
+                    May this year bring you endless joy, success, and prosperity!
                 </p>
-                
-                <!-- FIXED: BEAUTIFUL NAME DISPLAY -->
-                <div class="sender-name-container">
-                    <div class="sender-label">This wish is sent with love by:</div>
-                    <div class="sender-name" id="displayName">Your Name</div>
-                </div>
-                
-                <p class="signature">Warm wishes for 2026!</p>
             </div>
             
-            <div class="celebration-emoji">🎁🎀🎈</div>
+            <div style="margin: 40px 0;">
+                <div style="font-size: 1.5rem; color: #4d96ff; margin-bottom: 20px;">
+                    This wish is sent with love by:
+                </div>
+                <div class="user-name" id="displayName">Your Name</div>
+            </div>
+            
+            <div style="font-size: 2rem; color: #6bcf7f; margin-top: 40px;">
+                ✨ Warmest wishes for 2026! ✨
+            </div>
+            
+            <div style="font-size: 3rem; margin: 30px 0;">🎁🎀🎈</div>
         </div>
 
-        <!-- Generated Link Section -->
+        <!-- Link Section -->
         <div class="link-section" id="linkSection">
-            <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--gold);">
+            <h3 style="color: #ffd93d; margin-bottom: 25px; font-size: 1.8rem;">
                 <i class="fas fa-gift"></i> Your Personal Wish Link
             </h3>
-            
-            <p class="share-text">
-                Share this link to send New Year wishes from <span id="shareName" style="color: var(--hot-pink); text-shadow: 0 0 10px var(--hot-pink); font-weight: bold;">YOUR NAME</span>
-            </p>
-            
-            <p style="margin: 15px 0; font-size: 1.2rem; opacity: 0.9;">
-                When someone opens this link, they'll see your personalized New Year greeting!
-            </p>
             
             <div class="generated-link" id="generatedLink">
                 Your personalized link will appear here...
             </div>
             
             <div style="margin-top: 35px;">
-                <button class="btn btn-copy" id="copyBtn">
-                    <i class="far fa-copy"></i> COPY LINK
+                <button class="btn" id="copyBtn" style="background:linear-gradient(45deg, #4d96ff, #6bcf7f);">
+                    <i class="far fa-copy"></i> Copy Link
                 </button>
                 
-                <button class="btn btn-whatsapp" id="whatsappBtn">
-                    <i class="fab fa-whatsapp"></i> SHARE ON WHATSAPP
+                <button class="btn" id="whatsappBtn" style="background:linear-gradient(45deg, #25d366, #128c7e);">
+                    <i class="fab fa-whatsapp"></i> Share on WhatsApp
                 </button>
             </div>
         </div>
 
-        <!-- Instructions -->
-        <div class="instructions">
-            <h3 style="text-align: center; margin-bottom: 30px; color: var(--gold); font-size: 2rem;">
-                <i class="fas fa-star"></i> How To Send Wishes
-            </h3>
+        <!-- ============================================ -->
+        <!-- AD SPACE 3 - BOTTOM (Paste your ad code below) -->
+        <!-- ============================================ -->
+        <div class="ad-space" id="adSpace3">
+            <div class="ad-label">AD SPOT #3 - BOTTOM POSITION</div>
+            <div class="ad-size">Size: 728x90 or 970x90</div>
             
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h4>Enter Your Name</h4>
-                    <p>Type your name in the box above. This will appear as the sender.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h4>Create Wish Card</h4>
-                    <p>Click "Create My Wish Card" to generate your personalized greeting.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h4>Share With Friends</h4>
-                    <p>Copy the link or share directly on WhatsApp, Facebook, etc.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h4>Friends See Your Wish</h4>
-                    <p>When friends open the link, they'll see wishes from YOUR NAME!</p>
-                </div>
+            <!-- ✅✅✅ PASTE YOUR AD CODE HERE ✅✅✅ -->
+            <!-- 👇👇👇 Replace this div with your ad code 👇👇👇 -->
+            <div id="adCode3" style="margin-top: 20px; padding: 15px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                <!-- Example: Adsterra Popunder Code -->
+                <!-- 
+                <script type="text/javascript">
+                    var uri = 'https://impgb.trafficforce.com/rotator/imp.php?key=YOUR_KEY';
+                    document.write('<scr'+'ipt type="text/javascript" src="'+uri+'"></scr'+'ipt>');
+                </script>
+                -->
+                ⬆️⬆️⬆️ PASTE YOUR AD CODE ABOVE ⬆️⬆️⬆️
             </div>
+            <!-- ✅✅✅ END OF AD CODE AREA ✅✅✅ -->
             
-            <div style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,20,147,0.1); border-radius: 15px;">
-                <h4 style="color: var(--hot-pink); margin-bottom: 15px;">
-                    <i class="fas fa-lightbulb"></i> Perfect For:
-                </h4>
-                <p style="font-size: 1.3rem;">
-                    • Sending to Family Members<br>
-                    • Wishing Friends & Colleagues<br>
-                    • Sharing on Social Media<br>
-                    • Group Greetings<br>
-                    • Personal Touch to New Year Wishes
-                </p>
-            </div>
         </div>
 
         <!-- Footer -->
         <div class="footer">
-            <p style="font-size: 1.5rem; margin-bottom: 15px; color: var(--gold);">
+            <p style="font-size: 1.5rem; color: #ffd93d; margin-bottom: 20px;">
                 🎆 Spread Joy This New Year! 🎆
             </p>
-            <p style="margin-top: 10px; font-size: 1rem;">
-                Send personalized New Year 2026 wishes from your name to everyone you care about!
-            </p>
+            <p>Create and share personalized wishes with your loved ones!</p>
             <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
-                Made with <i class="fas fa-heart" style="color: var(--hot-pink);"></i> for Happy New Year 2026
+                © 2026 New Year Wishes
             </p>
         </div>
+
     </div>
 
     <script>
-        // Create animated fireworks
-        function createFireworks() {
-            const fireworksContainer = document.getElementById('fireworks');
-            const colors = ['#FF1493', '#FF0000', '#FFD700', '#00FFFF', '#FF8C00'];
-            
-            for(let i = 0; i < 60; i++) {
-                const firework = document.createElement('div');
-                firework.className = 'firework';
-                firework.style.left = `${Math.random() * 100}%`;
-                firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                firework.style.animationDelay = `${Math.random() * 2}s`;
-                fireworksContainer.appendChild(firework);
-            }
-        }
-
-        // Create sparkle effects
-        function createSparkles() {
-            const card = document.getElementById('greetingCard');
-            if (!card) return;
-            
-            for(let i = 0; i < 30; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.className = 'sparkle';
-                sparkle.style.left = `${Math.random() * 100}%`;
-                sparkle.style.top = `${Math.random() * 100}%`;
-                sparkle.style.animationDelay = `${Math.random() * 2}s`;
-                sparkle.style.width = `${Math.random() * 25 + 5}px`;
-                sparkle.style.height = sparkle.style.width;
-                sparkle.style.background = `linear-gradient(45deg, #FF1493, #FFD700)`;
-                card.appendChild(sparkle);
-            }
-        }
-
-        // Generate personalized link
-        function generateLink(name) {
-            const uniqueId = Date.now().toString(36) + Math.random().toString(36).substr(2);
-            const encodedName = encodeURIComponent(name);
-            return `https://newyear2026wishes.com/wish/${uniqueId}?from=${encodedName}&year=2026`;
-        }
-
-        // Celebrate with colorful confetti
-        function celebrate() {
-            // Pink and gold confetti
-            confetti({
-                particleCount: 200,
-                spread: 100,
-                origin: { y: 0.6 },
-                colors: ['#FF1493', '#FFD700', '#00FFFF', '#FF8C00']
-            });
-            
-            setTimeout(() => {
-                confetti({
-                    particleCount: 150,
-                    angle: 60,
-                    spread: 80,
-                    origin: { x: 0 },
-                    colors: ['#FF1493', '#FFD700']
-                });
-            }, 250);
-            
-            setTimeout(() => {
-                confetti({
-                    particleCount: 150,
-                    angle: 120,
-                    spread: 80,
-                    origin: { x: 1 },
-                    colors: ['#00FFFF', '#FF8C00']
-                });
-            }, 500);
-        }
-
-        // Show name preview as user types
-        document.getElementById('userName').addEventListener('input', function(e) {
-            const name = this.value.trim();
-            const previewDiv = document.getElementById('namePreview');
-            const previewName = document.getElementById('previewName');
-            
-            if(name.length > 0) {
-                previewDiv.style.display = 'block';
-                previewName.textContent = name;
-                
-                // Add colorful confetti for typing
-                if(name.length % 3 === 0) {
-                    confetti({
-                        particleCount: 15,
-                        spread: 40,
-                        origin: { y: 0.9 },
-                        colors: ['#FF1493', '#FFD700']
-                    });
-                }
-            } else {
-                previewDiv.style.display = 'none';
-            }
-        });
-
-        // Main function to generate greeting
+        // Main function
         document.getElementById('generateBtn').addEventListener('click', function() {
             const userName = document.getElementById('userName').value.trim();
             
             if(!userName) {
-                alert('Please enter your name first! This will appear as the sender of the wishes.');
-                document.getElementById('userName').focus();
+                alert('Please enter your name!');
                 return;
             }
             
-            // Display name in greeting card with beautiful colors
+            // Display name
             document.getElementById('displayName').textContent = userName;
-            document.getElementById('shareName').textContent = userName;
             
             // Show greeting card
-            const greetingCard = document.getElementById('greetingCard');
-            greetingCard.style.display = 'block';
+            document.getElementById('greetingCard').style.display = 'block';
             
             // Generate personalized link
-            const personalizedLink = generateLink(userName);
-            document.getElementById('generatedLink').textContent = personalizedLink;
+            const link = `https://newyear2026.site/wish?from=${encodeURIComponent(userName)}&id=${Date.now()}`;
+            document.getElementById('generatedLink').textContent = link;
             
             // Show link section
             document.getElementById('linkSection').style.display = 'block';
             
-            // Add sparkles to card
-            createSparkles();
-            
-            // Celebrate!
-            celebrate();
-            
-            // Scroll to greeting card
-            greetingCard.scrollIntoView({ behavior: 'smooth' });
-            
-            // Update page title
-            document.title = `🎉 New Year Wishes from ${userName} | 2026`;
-            
-            // Special animation for the name
-            const nameElement = document.getElementById('displayName');
-            nameElement.style.animation = 'rainbowGlow 0.8s ease-in-out 4';
+            // Scroll to greeting
+            document.getElementById('greetingCard').scrollIntoView({ behavior: 'smooth' });
         });
-
-        // Copy link to clipboard
+        
+        // Copy link
         document.getElementById('copyBtn').addEventListener('click', function() {
             const link = document.getElementById('generatedLink').textContent;
-            
-            navigator.clipboard.writeText(link).then(() => {
-                const originalText = this.innerHTML;
-                this.innerHTML = '<i class="fas fa-check"></i> LINK COPIED!';
-                this.style.background = 'linear-gradient(45deg, #FF1493, #00FFFF)';
-                
-                confetti({
-                    particleCount: 100,
-                    spread: 70,
-                    origin: { y: 0.8 },
-                    colors: ['#FF1493', '#FFD700']
-                });
-                
-                setTimeout(() => {
-                    this.innerHTML = originalText;
-                    this.style.background = 'linear-gradient(45deg, #8A2BE2, #FF1493)';
-                }, 2000);
-            });
+            navigator.clipboard.writeText(link);
+            this.textContent = 'Copied!';
+            setTimeout(() => this.textContent = 'Copy Link', 2000);
         });
-
-        // Share on WhatsApp
+        
+        // WhatsApp share
         document.getElementById('whatsappBtn').addEventListener('click', function() {
-            const userName = document.getElementById('userName').value.trim();
+            const name = document.getElementById('userName').value.trim();
             const link = document.getElementById('generatedLink').textContent;
             
-            const message = `🎉 *HAPPY NEW YEAR 2026!* 🎉
-
-I've sent you personalized New Year wishes!
-
-✨ *This wish is from:* ${userName}
-
-🌟 *Message:*
-Wishing you a wonderful New Year 2026 filled with joy, success, good health, and beautiful memories! May this year bring you all the happiness you deserve.
-
-🎇 Click to view your personalized greeting:
-${link}
-
-🥳 Share the joy! Create your own personalized wishes at:
-https://newyear2026wishes.com
-
-🎆 Happy New Year 2026! 🎆`;
-            <script>
-  atOptions = {
-    'key' : '626f9280917a4dcf6856ada064faf7f9',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script>
-            
-            const encodedMessage = encodeURIComponent(message);
-            const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
-            
-            window.open(whatsappUrl, '_blank');
-            
-            // Rainbow confetti celebration
-            for(let i = 0; i < 5; i++) {
-                setTimeout(() => {
-                    confetti({
-                        particleCount: 200,
-                        angle: Math.random() * 180,
-                        spread: 120,
-                        origin: { x: Math.random(), y: Math.random() * 0.5 },
-                        colors: ['#FF1493', '#8A2BE2', '#00FFFF', '#FFD700', '#FF8C00']
-                    });
-                }, i * 200);
-            }
+            const message = `🎉 Happy New Year 2026!\n\n${name} sent you New Year wishes!\n\nView: ${link}`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, '_blank');
         });
-
-        // Auto-focus on input
-        window.addEventListener('load', function() {
-            createFireworks();
-            
-            const nameInput = document.getElementById('userName');
-            nameInput.focus();
-            
-            // Placeholder animation
-            let placeholders = [
-                "Enter your name (e.g., John, Sarah, Michael)...",
-                "Your name will appear as sender...",
-                "Type your name here...",
-                "How should we address you?..."
-            ];
-            let counter = 0;
-            
-            setInterval(() => {
-                nameInput.placeholder = placeholders[counter];
-                counter = (counter + 1) % placeholders.length;
-            }, 3000);
-            
-            // Auto-celebration
-            setTimeout(celebrate, 1000);
-            
-            // Welcome message
-            setTimeout(() => {
-                if(!nameInput.value) {
-                    alert('🎇 WELCOME TO NEW YEAR 2026 WISHES! 🎇\n\nEnter your name to create personalized New Year wishes that will be sent FROM YOUR NAME to all your friends and family!');
-                }
-            }, 1500);
-        });
-
-        // Add floating emojis
-        function addFloatingEmojis() {
-            const emojis = ['🎉', '🎊', '🥳', '🎇', '🎆', '✨', '🌟', '🎁', '🎈', '❤️', '💫', '🔥'];
-            const container = document.querySelector('.container');
-            
-            for(let i = 0; i < 25; i++) {
-                const emoji = document.createElement('div');
-                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
-                emoji.style.position = 'fixed';
-                emoji.style.fontSize = `${Math.random() * 40 + 20}px`;
-                emoji.style.left = `${Math.random() * 100}vw`;
-                emoji.style.top = `${Math.random() * 100}vh`;
-                emoji.style.zIndex = '1';
-                emoji.style.pointerEvents = 'none';
-                emoji.style.opacity = '0.7';
-                emoji.style.animation = `float ${Math.random() * 5 + 3}s infinite ease-in-out`;
-                emoji.style.animationDelay = `${Math.random() * 3}s`;
-                container.appendChild(emoji);
-            }
-        }
-
-        // Start floating emojis
-        addFloatingEmojis();
-
+        
         // Enter key support
         document.getElementById('userName').addEventListener('keypress', function(e) {
             if(e.key === 'Enter') {
                 document.getElementById('generateBtn').click();
-            }
-        });
-
-        // Special effect when user starts typing
-        let nameTyped = false;
-        document.getElementById('userName').addEventListener('input', function(e) {
-            if(!nameTyped && this.value.length > 0) {
-                nameTyped = true;
-                confetti({
-                    particleCount: 150,
-                    spread: 70,
-                    origin: { y: 0.8 },
-                    colors: ['#FF1493', '#FFD700', '#00FFFF']
-                });
             }
         });
     </script>
