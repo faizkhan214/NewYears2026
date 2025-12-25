@@ -1,622 +1,1022 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> <meta name="viewport" content="width=1200">
-
+<head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy New Year 2026 Greetings | Personalized Wishes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>🎆 Happy New Year 2026 | Send Wishes From Your Name</title>
     
-    <!-- Blogger-Compatible CSS -->
+    <!-- WhatsApp Sharing Meta Tags -->
+    <meta property="og:title" content="🎉 Happy New Year 2026 Wish From [Your Name]">
+    <meta property="og:description" content="Send personalized New Year wishes from your name to friends & family">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:url" content="https://newyear2026wishes.com">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Dancing+Script:wght@700&family=Playfair+Display:wght@700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    
+    <!-- Confetti JS -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    
     <style>
-        /* Reset and Base Styles */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
+        :root {
+            --gold: #FFD700;
+            --gold-glow: #FFE55C;
+            --silver: #C0C0C0;
+            --firework-red: #FF0000;
+            --firework-blue: #0066FF;
+            --firework-green: #00FF00;
+            --dark-blue: #0A0F2B;
+            --sparkle: #FFEAA7;
+            --hot-pink: #FF1493;
+            --violet: #8A2BE2;
+            --cyan: #00FFFF;
+            --orange: #FF8C00;
+            --spring-green: #00FF7F;
+        }
+
         body {
-            background: #0a0a2a;
-            background: linear-gradient(135deg, #0a0a2a 0%, #1a1a4a 100%);
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0A0F2B 0%, #1A1F3C 50%, #2A2F4C 100%);
             color: white;
-            font-family: 'Arial', 'Helvetica Neue', sans-serif;
             min-height: 100vh;
-            padding: 20px;
             overflow-x: hidden;
-        }
-        
-        /* Container for Blogger */
-        .blogger-container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        /* Header Styles */
-        .festival-header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding: 20px 0;
             position: relative;
         }
-        
-        .festival-header h1 {
-            font-size: 3.5rem;
-            color: #ffd700;
-            text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        @media (max-width: 768px) {
-            .festival-header h1 {
-                font-size: 2.5rem;
-            }
-        }
-        
-        .year-2026 {
-            font-size: 5rem;
-            font-weight: 900;
-            color: #ff6b6b;
-            text-shadow: 0 0 30px rgba(255, 107, 107, 0.7);
-            margin: 20px 0;
-            display: inline-block;
-        }
-        
-        @media (max-width: 768px) {
-            .year-2026 {
-                font-size: 3.5rem;
-            }
-        }
-        
-        /* Greeting Card */
-        .greeting-card {
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
-            border-radius: 15px;
-            padding: 30px;
-            margin: 30px 0;
-            border: 2px solid rgba(255, 215, 0, 0.3);
-            position: relative;
-            min-height: 200px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-        
-        .greeting-text {
-            font-size: 1.8rem;
-            line-height: 1.6;
-            margin-bottom: 20px;
-        }
-        
-        @media (max-width: 768px) {
-            .greeting-text {
-                font-size: 1.4rem;
-            }
-        }
-        
-        .personal-name {
-            display: inline-block;
-            background: linear-gradient(45deg, #ff6b6b, #ffd700);
-            padding: 10px 25px;
-            border-radius: 50px;
-            font-weight: bold;
-            font-size: 2.2rem;
-            margin: 0 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            color: white;
-        }
-        
-        @media (max-width: 768px) {
-            .personal-name {
-                font-size: 1.8rem;
-                padding: 8px 20px;
-            }
-        }
-        
-        /* Input Section */
-        .input-section {
-            background: rgba(255, 255, 255, 0.08);
-            border-radius: 15px;
-            padding: 25px;
-            margin: 30px 0;
-            text-align: center;
-        }
-        
-        .input-label {
-            display: block;
-            font-size: 1.3rem;
-            margin-bottom: 15px;
-            color: #ffd700;
-            font-weight: bold;
-        }
-        
-        .name-input {
-            width: 100%;
-            max-width: 500px;
-            padding: 15px 20px;
-            font-size: 1.2rem;
-            border: 2px solid transparent;
-            border-radius: 50px;
-            background: rgba(255, 255, 255, 0.15);
-            color: white;
-            text-align: center;
-            margin: 0 auto 20px;
-            display: block;
-            transition: all 0.3s ease;
-        }
-        
-        .name-input:focus {
-            outline: none;
-            border-color: #ffd700;
-            box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
-            background: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Buttons */
-        .buttons-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 25px;
-        }
-        
-        .action-btn {
-            padding: 15px 30px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            min-width: 200px;
-        }
-        
-        .generate-btn {
-            background: linear-gradient(45deg, #ff6b6b, #ff8e53);
-            color: white;
-            box-shadow: 0 5px 15px rgba(255, 107, 107, 0.4);
-        }
-        
-        .whatsapp-btn {
-            background: linear-gradient(45deg, #25D366, #128C7E);
-            color: white;
-            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
-        }
-        
-        .action-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-        }
-        
-        /* Share Section */
-        .share-section {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            text-align: center;
-        }
-        
-        .share-title {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            color: #a0a0ff;
-        }
-        
-        .share-buttons {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 15px;
-        }
-        
-        .share-btn {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            color: white;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-        
-        .share-btn.whatsapp { background: #25D366; }
-        .share-btn.facebook { background: #3b5998; }
-        .share-btn.twitter { background: #1DA1F2; }
-        .share-btn.copy { background: #9c27b0; }
-        
-        .share-btn:hover {
-            transform: translateY(-5px) rotate(10deg);
-        }
-        
-        /* Festive Elements */
-        .festive-elements {
+
+        /* Animated Background */
+        .fireworks-bg {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             pointer-events: none;
-            z-index: -1;
+            z-index: 1;
         }
-        
-        .confetti {
+
+        .firework {
             position: absolute;
-            width: 10px;
-            height: 10px;
-            background-color: #ffd700;
-            animation: fall linear infinite;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            animation: firework-animation 2s infinite;
         }
-        
-        @keyframes fall {
+
+        @keyframes firework-animation {
+            0% { transform: translateY(100vh); opacity: 1; }
+            100% { transform: translateY(-100px); opacity: 0; }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Header */
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background: linear-gradient(45deg, rgba(255,215,0,0.2), rgba(192,192,192,0.2));
+            border-radius: 25px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 2px solid var(--gold);
+            box-shadow: 0 0 50px rgba(255,215,0,0.3);
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from { box-shadow: 0 0 30px rgba(255,215,0,0.3); }
+            to { box-shadow: 0 0 60px rgba(255,215,0,0.6); }
+        }
+
+        .new-year-text {
+            font-size: 4rem;
+            font-weight: 800;
+            background: linear-gradient(45deg, #FFD700, #FF8C00, #FF1493, #00BFFF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(255,255,255,0.3);
+            font-family: 'Dancing Script', cursive;
+            margin-bottom: 10px;
+        }
+
+        .year-2026 {
+            font-size: 6rem;
+            font-weight: 900;
+            color: var(--gold);
+            text-shadow: 0 0 20px var(--gold),
+                         0 0 40px var(--gold),
+                         0 0 60px var(--gold);
+            animation: pulse 1s infinite;
+            margin: 10px 0;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* Concept Explanation */
+        .concept-box {
+            background: linear-gradient(135deg, rgba(255,20,147,0.2), rgba(255,215,0,0.2));
+            padding: 25px;
+            border-radius: 20px;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid var(--hot-pink);
+            max-width: 800px;
+        }
+
+        .concept-box h3 {
+            color: var(--hot-pink);
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .concept-box p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .highlight {
+            color: var(--gold);
+            font-weight: bold;
+            font-size: 1.3rem;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Input Section */
+        .input-section {
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .from-label {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: var(--sparkle);
+            display: block;
+        }
+
+        .input-label {
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+            color: var(--hot-pink);
+            display: block;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .name-input {
+            width: 80%;
+            max-width: 500px;
+            padding: 25px;
+            font-size: 1.8rem;
+            border: none;
+            border-radius: 50px;
+            background: rgba(255,255,255,0.95);
+            text-align: center;
+            margin: 20px auto;
+            outline: none;
+            transition: all 0.3s;
+            border: 4px solid transparent;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .name-input:focus {
+            border-color: var(--hot-pink);
+            box-shadow: 0 0 40px var(--hot-pink);
+            transform: scale(1.05);
+        }
+
+        /* Buttons */
+        .btn {
+            padding: 20px 50px;
+            font-size: 1.4rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 700;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .btn-generate {
+            background: linear-gradient(45deg, #FF1493, #FF8C00);
+            color: white;
+            box-shadow: 0 10px 30px rgba(255,20,147,0.4);
+        }
+
+        .btn-generate:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(255,20,147,0.6);
+        }
+
+        .btn-whatsapp {
+            background: linear-gradient(45deg, #25D366, #128C7E);
+            color: white;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+        }
+
+        .btn-whatsapp:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(37,211,102,0.6);
+        }
+
+        .btn-copy {
+            background: linear-gradient(45deg, #8A2BE2, #FF1493);
+            color: white;
+            box-shadow: 0 10px 30px rgba(138,43,226,0.4);
+        }
+
+        .btn-copy:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(138,43,226,0.6);
+        }
+
+        /* Greeting Card */
+        .greeting-card {
+            display: none;
+            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+            margin: 40px auto;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid var(--gold);
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            animation: cardReveal 0.8s ease-out;
+        }
+
+        @keyframes cardReveal {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .greeting-text {
+            font-size: 2.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-weight: 600;
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* FIXED: BEAUTIFUL NAME DISPLAY */
+        .sender-name-container {
+            margin: 40px 0;
+            padding: 40px 30px;
+            background: linear-gradient(135deg, 
+                rgba(255, 20, 147, 0.15), 
+                rgba(138, 43, 226, 0.15),
+                rgba(0, 255, 255, 0.15),
+                rgba(255, 140, 0, 0.15));
+            border-radius: 20px;
+            border: 4px solid;
+            border-image: linear-gradient(45deg, #FF1493, #8A2BE2, #00FFFF, #FF8C00) 1;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 0 20px rgba(255, 20, 147, 0.3),
+                0 0 40px rgba(138, 43, 226, 0.2),
+                inset 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+
+        .sender-label {
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .sender-name {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 900;
+            letter-spacing: 2px;
+            padding: 25px 50px;
+            border-radius: 15px;
+            position: relative;
+            z-index: 2;
+            background: linear-gradient(45deg,
+                #FF1493 0%,
+                #FF8C00 25%,
+                #FFD700 50%,
+                #00FF7F 75%,
+                #00FFFF 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 
+                0 0 15px rgba(255, 20, 147, 0.7),
+                0 0 30px rgba(255, 20, 147, 0.5),
+                0 0 45px rgba(255, 20, 147, 0.3);
+            animation: rainbowGlow 2s infinite alternate;
+            display: inline-block;
+            margin: 15px 0;
+            position: relative;
+        }
+
+        /* Add a shiny overlay effect */
+        .sender-name::after {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: linear-gradient(45deg,
+                transparent 0%,
+                rgba(255, 255, 255, 0.2) 50%,
+                transparent 100%);
+            border-radius: 20px;
+            z-index: -1;
+            animation: shine 3s infinite linear;
+        }
+
+        @keyframes rainbowGlow {
             0% {
-                top: -10px;
-                transform: rotate(0deg);
-                opacity: 1;
+                filter: hue-rotate(0deg);
+                text-shadow: 
+                    0 0 15px rgba(255, 20, 147, 0.7),
+                    0 0 30px rgba(255, 20, 147, 0.5),
+                    0 0 45px rgba(255, 20, 147, 0.3);
+                transform: scale(1);
             }
             100% {
-                top: 100vh;
-                transform: rotate(360deg);
-                opacity: 0;
+                filter: hue-rotate(360deg);
+                text-shadow: 
+                    0 0 20px rgba(0, 255, 255, 0.7),
+                    0 0 40px rgba(0, 255, 255, 0.5),
+                    0 0 60px rgba(0, 255, 255, 0.3);
+                transform: scale(1.05);
             }
         }
-        
-        /* Success Message */
-        .success-message {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: linear-gradient(45deg, #4CAF50, #8BC34A);
-            color: white;
-            padding: 15px 25px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            transform: translateX(150%);
-            transition: transform 0.5s ease;
-            max-width: 300px;
-            z-index: 1000;
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%) translateY(-100%) rotate(45deg);
+            }
+            100% {
+                transform: translateX(100%) translateY(100%) rotate(45deg);
+            }
         }
-        
-        .success-message.show {
-            transform: translateX(0);
+
+        .signature {
+            font-size: 2rem;
+            color: var(--gold);
+            font-family: 'Dancing Script', cursive;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255,255,255,0.3);
         }
-        
-        /* Footer */
-        .festival-footer {
+
+        /* Generated Link Section */
+        .link-section {
+            display: none;
+            background: rgba(255,255,255,0.1);
+            padding: 40px;
+            border-radius: 25px;
             margin-top: 40px;
+            backdrop-filter: blur(10px);
             text-align: center;
-            color: #8888cc;
-            font-size: 0.9rem;
-            padding: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
-        /* Mobile Responsive */
+
+        .generated-link {
+            background: rgba(0,0,0,0.3);
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px 0;
+            word-break: break-all;
+            font-family: monospace;
+            border: 2px dashed var(--gold);
+            color: var(--sparkle);
+            font-size: 1.2rem;
+        }
+
+        /* Celebration Elements */
+        .celebration-emoji {
+            font-size: 3rem;
+            margin: 15px;
+            animation: float 3s infinite ease-in-out;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--sparkle);
+            border-radius: 50%;
+            animation: sparkle 1.5s infinite;
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        /* NEW: Name Preview */
+        .name-preview {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
+            display: none;
+            border: 2px solid var(--hot-pink);
+        }
+
+        .preview-text {
+            font-size: 1.2rem;
+            color: var(--sparkle);
+            margin-bottom: 15px;
+        }
+
+        .preview-name {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(45deg, #FF1493, #FF8C00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* Instructions */
+        .instructions {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 25px;
+            margin-top: 40px;
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .step {
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+            padding: 30px 20px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            border: 2px solid rgba(255,215,0,0.3);
+            transition: transform 0.3s;
+        }
+
+        .step:hover {
+            transform: translateY(-10px);
+            border-color: var(--hot-pink);
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(45deg, var(--hot-pink), var(--gold));
+            color: var(--dark-blue);
+            border-radius: 50%;
+            line-height: 50px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            color: rgba(255,255,255,0.7);
+            font-size: 1rem;
+            border-top: 2px solid rgba(255,255,255,0.1);
+        }
+
+        .share-text {
+            font-size: 1.5rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            body {
-                padding: 10px;
+            .new-year-text { font-size: 3rem; }
+            .year-2026 { font-size: 4.5rem; }
+            .greeting-text { font-size: 1.8rem; }
+            .sender-name { 
+                font-size: 3rem; 
+                padding: 15px 30px;
             }
-            
-            .blogger-container {
-                padding: 15px;
+            .sender-name-container {
+                padding: 25px 15px;
             }
-            
-            .buttons-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            
-            .action-btn {
-                width: 100%;
-                max-width: 300px;
-            }
-            
-            .share-buttons {
-                gap: 10px;
-            }
-            
-            .share-btn {
-                width: 45px;
-                height: 45px;
-                font-size: 1.3rem;
-            }
+            .name-input { width: 95%; padding: 20px; font-size: 1.5rem; }
+            .btn { padding: 15px 30px; font-size: 1.2rem; }
+            .concept-box h3 { font-size: 1.5rem; }
+            .input-label { font-size: 1.8rem; }
+            .preview-name { font-size: 2rem; }
         }
     </style>
-    
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <!-- Festive Background Elements -->
-    <div class="festive-elements" id="festiveElements"></div>
-    
-    <!-- Main Container -->
-    <div class="blogger-container">
-        <!-- Header Section -->
-        <header class="festival-header">
-            <h1>🎉 Happy New Year 2026 🎉</h1>
-            <p style="font-size: 1.2rem; color: #a0a0ff; margin-bottom: 20px;">
-                Create & Share Personalized New Year Greetings
 
-                <script>
-  atOptions = {
-    'key' : '626f9280917a4dcf6856ada064faf7f9',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script>
-            </p>
+    <!-- Animated Fireworks Background -->
+    <div class="fireworks-bg" id="fireworks"></div>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Header -->
+        <div class="header">
+            <h1 class="new-year-text">Happy New Year</h1>
             <div class="year-2026">2026</div>
-        </header>
-        
-        <!-- Greeting Card -->
-        <div class="greeting-card">
-            <div class="greeting-text">
-                Wishing <span class="personal-name" id="displayName">Your Name</span> a spectacular 
-                New Year 2026 filled with joy, success, and happiness!
-            </div>
-            <div class="greeting-text">
-                May this year bring new opportunities, cherished moments, and dreams come true!
-            </div>
+            <p style="font-size: 1.4rem; opacity: 0.9; margin-top: 20px;">
+                ✨ Send Personalized Wishes From Your Name ✨
+            </p>
         </div>
-        
+
+        <!-- Concept Explanation -->
+        <div class="concept-box">
+            <h3>🎯 How This Works:</h3>
+            <p>You enter <span class="highlight">YOUR NAME</span> below</p>
+            <p>We create a <span class="highlight">personalized greeting card</span> that says:</p>
+            <p style="font-size: 1.4rem; color: var(--gold); font-style: italic;">
+                "Happy New Year from [YOUR NAME]"
+            </p>
+            <p>Share the generated link with friends & family</p>
+            <p style="margin-top: 15px; color: var(--hot-pink);">
+                <i class="fas fa-heart"></i> They'll see the wish is personally from YOU!
+            </p>
+        </div>
+
         <!-- Input Section -->
         <div class="input-section">
+            <span class="from-label">WISHES FROM:</span>
             <label class="input-label">
-                <i class="fas fa-user-edit"></i> Enter Your Name for Personalized Greeting
+                <i class="fas fa-user-edit"></i> Enter Your Name
             </label>
-            <input type="text" class="name-input" id="userName" 
-                   placeholder="Type your name here..." 
-                   maxlength="25">
-            
-            <div class="buttons-container">
-                <button class="action-btn generate-btn" id="updateBtn">
-                    <i class="fas fa-magic"></i> Create My Greeting
-                </button>
-                <button class="action-btn whatsapp-btn" id="whatsappBtn">
-                    <i class="fab fa-whatsapp"></i> Share on WhatsApp
-                </button>
-            </div>
-        </div>
-        
-        <!-- Share Section -->
-        <div class="share-section">
-            <p class="share-title">Share with friends on:</p>
-            <div class="share-buttons">
-                <div class="share-btn whatsapp" id="whatsappShare">
-                    <i class="fab fa-whatsapp"></i>
-                </div>
-                <div class="share-btn facebook" id="facebookShare">
-                    <i class="fab fa-facebook-f"></i>
-                </div>
-                <div class="share-btn twitter" id="twitterShare">
-                    <i class="fab fa-twitter"></i>
-                </div>
-                <div class="share-btn copy" id="copyShare">
-                    <i class="fas fa-copy"></i>
-                </div>
-            </div>
-        </div>
-        
-        <!-- Footer -->
-        <footer class="festival-footer">
-            <p>Made with ❤️ for New Year 2026 | Spread joy and positivity!</p>
-            <p style="font-size: 0.8rem; margin-top: 10px; color: #7777aa;">
-                This website works perfectly on Blogger platform
+            <p style="margin-bottom: 20px; font-size: 1.2rem; opacity: 0.9;">
+                This name will appear as the sender of the New Year wishes
             </p>
-        </footer>
+            
+            <input type="text" 
+                   class="name-input" 
+                   id="userName" 
+                   placeholder="Enter your name (e.g., John, Sarah, Michael)..."
+                   maxlength="30">
+            
+            <!-- Name Preview -->
+            <div class="name-preview" id="namePreview">
+                <div class="preview-text">Preview how your name will appear:</div>
+                <div class="preview-name" id="previewName">Your Name</div>
+            </div>
+            
+            <button class="btn btn-generate" id="generateBtn">
+                <i class="fas fa-magic"></i> CREATE MY WISH CARD
+            </button>
+        </div>
+
+        <!-- Greeting Card -->
+        <div class="greeting-card" id="greetingCard">
+            <div class="celebration-emoji">🎉🎊🥳</div>
+            
+            <div class="greeting-text">
+                <p>Wishing You A Wonderful New Year 2026!</p>
+                <p>May this year bring you:</p>
+                <p style="margin: 25px 0;">
+                    ✨ Joy & Happiness<br>
+                    💫 Success & Prosperity<br>
+                    🌟 Good Health & Peace<br>
+                    🎇 Love & Beautiful Memories
+                </p>
+                
+                <!-- FIXED: BEAUTIFUL NAME DISPLAY -->
+                <div class="sender-name-container">
+                    <div class="sender-label">This wish is sent with love by:</div>
+                    <div class="sender-name" id="displayName">Your Name</div>
+                </div>
+                
+                <p class="signature">Warm wishes for 2026!</p>
+            </div>
+            
+            <div class="celebration-emoji">🎁🎀🎈</div>
+        </div>
+
+        <!-- Generated Link Section -->
+        <div class="link-section" id="linkSection">
+            <h3 style="font-size: 2rem; margin-bottom: 20px; color: var(--gold);">
+                <i class="fas fa-gift"></i> Your Personal Wish Link
+            </h3>
+            
+            <p class="share-text">
+                Share this link to send New Year wishes from <span id="shareName" style="color: var(--hot-pink); text-shadow: 0 0 10px var(--hot-pink); font-weight: bold;">YOUR NAME</span>
+            </p>
+            
+            <p style="margin: 15px 0; font-size: 1.2rem; opacity: 0.9;">
+                When someone opens this link, they'll see your personalized New Year greeting!
+            </p>
+            
+            <div class="generated-link" id="generatedLink">
+                Your personalized link will appear here...
+            </div>
+            
+            <div style="margin-top: 35px;">
+                <button class="btn btn-copy" id="copyBtn">
+                    <i class="far fa-copy"></i> COPY LINK
+                </button>
+                
+                <button class="btn btn-whatsapp" id="whatsappBtn">
+                    <i class="fab fa-whatsapp"></i> SHARE ON WHATSAPP
+                </button>
+            </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="instructions">
+            <h3 style="text-align: center; margin-bottom: 30px; color: var(--gold); font-size: 2rem;">
+                <i class="fas fa-star"></i> How To Send Wishes
+            </h3>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Enter Your Name</h4>
+                    <p>Type your name in the box above. This will appear as the sender.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Create Wish Card</h4>
+                    <p>Click "Create My Wish Card" to generate your personalized greeting.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Share With Friends</h4>
+                    <p>Copy the link or share directly on WhatsApp, Facebook, etc.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h4>Friends See Your Wish</h4>
+                    <p>When friends open the link, they'll see wishes from YOUR NAME!</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px; padding: 20px; background: rgba(255,20,147,0.1); border-radius: 15px;">
+                <h4 style="color: var(--hot-pink); margin-bottom: 15px;">
+                    <i class="fas fa-lightbulb"></i> Perfect For:
+                </h4>
+                <p style="font-size: 1.3rem;">
+                    • Sending to Family Members<br>
+                    • Wishing Friends & Colleagues<br>
+                    • Sharing on Social Media<br>
+                    • Group Greetings<br>
+                    • Personal Touch to New Year Wishes
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p style="font-size: 1.5rem; margin-bottom: 15px; color: var(--gold);">
+                🎆 Spread Joy This New Year! 🎆
+            </p>
+            <p style="margin-top: 10px; font-size: 1rem;">
+                Send personalized New Year 2026 wishes from your name to everyone you care about!
+            </p>
+            <p style="margin-top: 20px; font-size: 0.9rem; opacity: 0.7;">
+                Made with <i class="fas fa-heart" style="color: var(--hot-pink);"></i> for Happy New Year 2026
+            </p>
+        </div>
     </div>
-    
-    <!-- Success Message -->
-    <div class="success-message" id="successMessage">
-        <span id="messageText">Greeting created successfully!</span>
-    </div>
-    
-    <!-- JavaScript -->
+
     <script>
-        // DOM Elements
-        const userNameInput = document.getElementById('userName');
-        const displayName = document.getElementById('displayName');
-        const updateBtn = document.getElementById('updateBtn');
-        const whatsappBtn = document.getElementById('whatsappBtn');
-        const successMessage = document.getElementById('successMessage');
-        const messageText = document.getElementById('messageText');
-        const festiveElements = document.getElementById('festiveElements');
-        
-        // Share buttons
-        const whatsappShare = document.getElementById('whatsappShare');
-        const facebookShare = document.getElementById('facebookShare');
-        const twitterShare = document.getElementById('twitterShare');
-        const copyShare = document.getElementById('copyShare');
-        
-        // Create festive elements (confetti)
-        function createFestiveElements() {
-            festiveElements.innerHTML = '';
+        // Create animated fireworks
+        function createFireworks() {
+            const fireworksContainer = document.getElementById('fireworks');
+            const colors = ['#FF1493', '#FF0000', '#FFD700', '#00FFFF', '#FF8C00'];
             
-            // Create confetti
-            for (let i = 0; i < 50; i++) {
-                const confetti = document.createElement('div');
-                confetti.classList.add('confetti');
-                
-                // Random position
-                confetti.style.left = Math.random() * 100 + 'vw';
-                
-                // Random color
-                const colors = ['#ffd700', '#ff6b6b', '#4CAF50', '#2196F3', '#9C27B0'];
-                confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-                
-                // Random size
-                const size = Math.random() * 8 + 5;
-                confetti.style.width = size + 'px';
-                confetti.style.height = size + 'px';
-                
-                // Random animation
-                const duration = Math.random() * 3 + 2;
-                const delay = Math.random() * 5;
-                
-                confetti.style.animation = `fall ${duration}s linear ${delay}s infinite`;
-                
-                festiveElements.appendChild(confetti);
+            for(let i = 0; i < 60; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.left = `${Math.random() * 100}%`;
+                firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+                firework.style.animationDelay = `${Math.random() * 2}s`;
+                fireworksContainer.appendChild(firework);
             }
         }
-        
-        // Show success message
-        function showMessage(message, type = 'success') {
-            messageText.textContent = message;
+
+        // Create sparkle effects
+        function createSparkles() {
+            const card = document.getElementById('greetingCard');
+            if (!card) return;
             
-            // Set color based on type
-            if (type === 'success') {
-                successMessage.style.background = 'linear-gradient(45deg, #4CAF50, #8BC34A)';
-            } else if (type === 'error') {
-                successMessage.style.background = 'linear-gradient(45deg, #f44336, #ff9800)';
-            } else {
-                successMessage.style.background = 'linear-gradient(45deg, #2196F3, #03A9F4)';
+            for(let i = 0; i < 30; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = `${Math.random() * 100}%`;
+                sparkle.style.top = `${Math.random() * 100}%`;
+                sparkle.style.animationDelay = `${Math.random() * 2}s`;
+                sparkle.style.width = `${Math.random() * 25 + 5}px`;
+                sparkle.style.height = sparkle.style.width;
+                sparkle.style.background = `linear-gradient(45deg, #FF1493, #FFD700)`;
+                card.appendChild(sparkle);
             }
+        }
+
+        // Generate personalized link
+        function generateLink(name) {
+            const uniqueId = Date.now().toString(36) + Math.random().toString(36).substr(2);
+            const encodedName = encodeURIComponent(name);
+            return `https://newyear2026wishes.com/wish/${uniqueId}?from=${encodedName}&year=2026`;
+        }
+
+        // Celebrate with colorful confetti
+        function celebrate() {
+            // Pink and gold confetti
+            confetti({
+                particleCount: 200,
+                spread: 100,
+                origin: { y: 0.6 },
+                colors: ['#FF1493', '#FFD700', '#00FFFF', '#FF8C00']
+            });
             
-            successMessage.classList.add('show');
-            
-            // Hide after 3 seconds
             setTimeout(() => {
-                successMessage.classList.remove('show');
-            }, 3000);
-        }
-        
-        // Update greeting with user's name
-        updateBtn.addEventListener('click', function() {
-            const name = userNameInput.value.trim();
+                confetti({
+                    particleCount: 150,
+                    angle: 60,
+                    spread: 80,
+                    origin: { x: 0 },
+                    colors: ['#FF1493', '#FFD700']
+                });
+            }, 250);
             
-            if (name === '') {
-                showMessage('Please enter your name first!', 'error');
-                // Add shake effect to input
-                userNameInput.style.animation = 'shake 0.5s';
-                setTimeout(() => {
-                    userNameInput.style.animation = '';
-                }, 500);
+            setTimeout(() => {
+                confetti({
+                    particleCount: 150,
+                    angle: 120,
+                    spread: 80,
+                    origin: { x: 1 },
+                    colors: ['#00FFFF', '#FF8C00']
+                });
+            }, 500);
+        }
+
+        // Show name preview as user types
+        document.getElementById('userName').addEventListener('input', function(e) {
+            const name = this.value.trim();
+            const previewDiv = document.getElementById('namePreview');
+            const previewName = document.getElementById('previewName');
+            
+            if(name.length > 0) {
+                previewDiv.style.display = 'block';
+                previewName.textContent = name;
+                
+                // Add colorful confetti for typing
+                if(name.length % 3 === 0) {
+                    confetti({
+                        particleCount: 15,
+                        spread: 40,
+                        origin: { y: 0.9 },
+                        colors: ['#FF1493', '#FFD700']
+                    });
+                }
+            } else {
+                previewDiv.style.display = 'none';
+            }
+        });
+
+        // Main function to generate greeting
+        document.getElementById('generateBtn').addEventListener('click', function() {
+            const userName = document.getElementById('userName').value.trim();
+            
+            if(!userName) {
+                alert('Please enter your name first! This will appear as the sender of the wishes.');
+                document.getElementById('userName').focus();
                 return;
             }
             
-            // Update displayed name with animation
-            displayName.style.transform = 'scale(0)';
-            setTimeout(() => {
-                displayName.textContent = name;
-                displayName.style.transform = 'scale(1)';
-            }, 300);
+            // Display name in greeting card with beautiful colors
+            document.getElementById('displayName').textContent = userName;
+            document.getElementById('shareName').textContent = userName;
             
-            // Create festive elements
-            createFestiveElements();
+            // Show greeting card
+            const greetingCard = document.getElementById('greetingCard');
+            greetingCard.style.display = 'block';
             
-            showMessage(`Perfect, ${name}! Your personalized greeting is ready!`);
+            // Generate personalized link
+            const personalizedLink = generateLink(userName);
+            document.getElementById('generatedLink').textContent = personalizedLink;
+            
+            // Show link section
+            document.getElementById('linkSection').style.display = 'block';
+            
+            // Add sparkles to card
+            createSparkles();
+            
+            // Celebrate!
+            celebrate();
+            
+            // Scroll to greeting card
+            greetingCard.scrollIntoView({ behavior: 'smooth' });
+            
+            // Update page title
+            document.title = `🎉 New Year Wishes from ${userName} | 2026`;
+            
+            // Special animation for the name
+            const nameElement = document.getElementById('displayName');
+            nameElement.style.animation = 'rainbowGlow 0.8s ease-in-out 4';
         });
-        
-        // Share on WhatsApp
-        function shareOnWhatsApp() {
-            const name = userNameInput.value.trim() || 'Your Name';
-            const greeting = `🎉 *Happy New Year 2026!* 🎉\n\nWishing ${name} a spectacular New Year filled with joy, success, and endless possibilities! May 2026 bring you love, laughter, and all the happiness you deserve!\n\nCreate your own personalized greeting on our website!`;
-            
-            const whatsappURL = `https://wa.me/?text=${encodeURIComponent(greeting)}`;
-            window.open(whatsappURL, '_blank');
-            showMessage('Opening WhatsApp to share your greeting!');
-        }
-        
-        // Share on Facebook
-        function shareOnFacebook() {
-            // For Blogger, we'll use a simple share dialog
-            const url = encodeURIComponent(window.location.href);
-            const facebookURL = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
-            window.open(facebookURL, '_blank', 'width=600,height=400');
-            showMessage('Sharing on Facebook!');
-        }
-        
-        // Share on Twitter
-        function shareOnTwitter() {
-            const name = userNameInput.value.trim() || 'Your Name';
-            const text = encodeURIComponent(`Check out my personalized New Year 2026 greeting for ${name}!`);
-            const url = encodeURIComponent(window.location.href);
-            const twitterURL = `https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=HappyNewYear2026,NewYearGreetings`;
-            window.open(twitterURL, '_blank', 'width=600,height=400');
-            showMessage('Sharing on Twitter!');
-        }
-        
+
         // Copy link to clipboard
-        function copyToClipboard() {
-            const url = window.location.href;
-            navigator.clipboard.writeText(url).then(() => {
-                showMessage('Link copied to clipboard! Share it with friends.');
-            }).catch(err => {
-                console.error('Could not copy text: ', err);
-                showMessage('Failed to copy link', 'error');
+        document.getElementById('copyBtn').addEventListener('click', function() {
+            const link = document.getElementById('generatedLink').textContent;
+            
+            navigator.clipboard.writeText(link).then(() => {
+                const originalText = this.innerHTML;
+                this.innerHTML = '<i class="fas fa-check"></i> LINK COPIED!';
+                this.style.background = 'linear-gradient(45deg, #FF1493, #00FFFF)';
+                
+                confetti({
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.8 },
+                    colors: ['#FF1493', '#FFD700']
+                });
+                
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    this.style.background = 'linear-gradient(45deg, #8A2BE2, #FF1493)';
+                }, 2000);
             });
-        }
-        
-        // Event listeners
-        whatsappBtn.addEventListener('click', shareOnWhatsApp);
-        whatsappShare.addEventListener('click', shareOnWhatsApp);
-        facebookShare.addEventListener('click', shareOnFacebook);
-        twitterShare.addEventListener('click', shareOnTwitter);
-        copyShare.addEventListener('click', copyToClipboard);
-        
-        // Enter key to update greeting
-        userNameInput.addEventListener('keypress', function(e) {
-            if (e.key === 'Enter') {
-                updateBtn.click();
+        });
+
+        // Share on WhatsApp
+        document.getElementById('whatsappBtn').addEventListener('click', function() {
+            const userName = document.getElementById('userName').value.trim();
+            const link = document.getElementById('generatedLink').textContent;
+            
+            const message = `🎉 *HAPPY NEW YEAR 2026!* 🎉
+
+I've sent you personalized New Year wishes!
+
+✨ *This wish is from:* ${userName}
+
+🌟 *Message:*
+Wishing you a wonderful New Year 2026 filled with joy, success, good health, and beautiful memories! May this year bring you all the happiness you deserve.
+
+🎇 Click to view your personalized greeting:
+${link}
+
+🥳 Share the joy! Create your own personalized wishes at:
+https://newyear2026wishes.com
+
+🎆 Happy New Year 2026! 🎆`;
+            
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/?text=${encodedMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+            
+            // Rainbow confetti celebration
+            for(let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    confetti({
+                        particleCount: 200,
+                        angle: Math.random() * 180,
+                        spread: 120,
+                        origin: { x: Math.random(), y: Math.random() * 0.5 },
+                        colors: ['#FF1493', '#8A2BE2', '#00FFFF', '#FFD700', '#FF8C00']
+                    });
+                }, i * 200);
             }
         });
-        
-        // Add shake animation for errors
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes shake {
-                0%, 100% { transform: translateX(0); }
-                10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
-                20%, 40%, 60%, 80% { transform: translateX(5px); }
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Auto-update if URL has name parameter
+
+        // Auto-focus on input
         window.addEventListener('load', function() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const nameParam = urlParams.get('name');
+            createFireworks();
             
-            if (nameParam) {
-                userNameInput.value = nameParam;
-                displayName.textContent = nameParam;
-                showMessage(`Welcome ${nameParam}! Your personalized greeting is ready.`);
-                createFestiveElements();
+            const nameInput = document.getElementById('userName');
+            nameInput.focus();
+            
+            // Placeholder animation
+            let placeholders = [
+                "Enter your name (e.g., John, Sarah, Michael)...",
+                "Your name will appear as sender...",
+                "Type your name here...",
+                "How should we address you?..."
+            ];
+            let counter = 0;
+            
+            setInterval(() => {
+                nameInput.placeholder = placeholders[counter];
+                counter = (counter + 1) % placeholders.length;
+            }, 3000);
+            
+            // Auto-celebration
+            setTimeout(celebrate, 1000);
+            
+            // Welcome message
+            setTimeout(() => {
+                if(!nameInput.value) {
+                    alert('🎇 WELCOME TO NEW YEAR 2026 WISHES! 🎇\n\nEnter your name to create personalized New Year wishes that will be sent FROM YOUR NAME to all your friends and family!');
+                }
+            }, 1500);
+        });
+
+        // Add floating emojis
+        function addFloatingEmojis() {
+            const emojis = ['🎉', '🎊', '🥳', '🎇', '🎆', '✨', '🌟', '🎁', '🎈', '❤️', '💫', '🔥'];
+            const container = document.querySelector('.container');
+            
+            for(let i = 0; i < 25; i++) {
+                const emoji = document.createElement('div');
+                emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+                emoji.style.position = 'fixed';
+                emoji.style.fontSize = `${Math.random() * 40 + 20}px`;
+                emoji.style.left = `${Math.random() * 100}vw`;
+                emoji.style.top = `${Math.random() * 100}vh`;
+                emoji.style.zIndex = '1';
+                emoji.style.pointerEvents = 'none';
+                emoji.style.opacity = '0.7';
+                emoji.style.animation = `float ${Math.random() * 5 + 3}s infinite ease-in-out`;
+                emoji.style.animationDelay = `${Math.random() * 3}s`;
+                container.appendChild(emoji);
             }
-            
-            // Create initial festive elements
-            createFestiveElements();
-            
-            // Set current year + 1
-            document.querySelector('.year-2026').textContent = new Date().getFullYear() + 1;
+        }
+
+        // Start floating emojis
+        addFloatingEmojis();
+
+        // Enter key support
+        document.getElementById('userName').addEventListener('keypress', function(e) {
+            if(e.key === 'Enter') {
+                document.getElementById('generateBtn').click();
+            }
+        });
+
+        // Special effect when user starts typing
+        let nameTyped = false;
+        document.getElementById('userName').addEventListener('input', function(e) {
+            if(!nameTyped && this.value.length > 0) {
+                nameTyped = true;
+                confetti({
+                    particleCount: 150,
+                    spread: 70,
+                    origin: { y: 0.8 },
+                    colors: ['#FF1493', '#FFD700', '#00FFFF']
+                });
+            }
         });
     </script>
+
 </body>
 </html>
-<script>
-  atOptions = {
-    'key' : '626f9280917a4dcf6856ada064faf7f9',
-    'format' : 'iframe',
-    'height' : 90,
-    'width' : 728,
-    'params' : {}
-  };
-</script>
-<script src="https://www.highperformanceformat.com/626f9280917a4dcf6856ada064faf7f9/invoke.js"></script>
